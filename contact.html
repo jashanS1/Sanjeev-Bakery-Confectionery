@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sanjeev Bakery & Confectionery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-form { background: var(--clr-white); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-control { width: 100%; padding: 12px 15px; border: 1px solid rgba(45, 26, 17, 0.2); border-radius: var(--radius-sm); font-family: var(--font-body); transition: var(--transition); }
+        .form-control:focus { outline: none; border-color: var(--clr-golden); box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2); }
+        .map-container { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft); height: 100%; min-height: 400px; }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+        @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sanjeev Bakery</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cakes.html">Birthday Cakes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="container section" style="margin-top: 80px;">
+        <div class="section-header fade-up">
+            <p>Get in Touch</p>
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-grid fade-up">
+            <!-- Form -->
+            <div class="contact-form zoom-in">
+                <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message / Cake Requirements</label>
+                        <textarea class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                </form>
+                
+                <div style="margin-top: 30px;">
+                    <h4 style="margin-bottom: 10px;">Our Info</h4>
+                    <p><i class="fas fa-map-marker-alt text-golden"></i> 2690, Sufian Bagh Road, Near Mini Rose Garden, Ajit Nagar, Ludhiana</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-phone-alt text-golden"></i> +91 XXXXX XXXXX</p>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container zoom-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1711.9680519133464!2d75.8643806!3d30.8920153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a830009c9535f%3A0xc66f68c3b9ddf5df!2sSanjeev%20Bakery!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <a href="tel:+91XXXXXXXXXX" class="floating-call"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="floating-wa"><i class="fab fa-whatsapp"></i></a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom fade-up">
+                <p>&copy; 2026 Sanjeev Bakery & Confectionery. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

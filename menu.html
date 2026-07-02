@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Sanjeev Bakery & Confectionery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .menu-category { margin-bottom: 60px; }
+        .menu-category-title { border-bottom: 2px solid var(--clr-golden); padding-bottom: 10px; margin-bottom: 30px; display: inline-block; }
+        .menu-item { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px dashed rgba(45, 26, 17, 0.2); transition: var(--transition); }
+        .menu-item:hover { padding-left: 10px; background: rgba(197, 160, 89, 0.05); }
+        .item-name { font-weight: 600; font-size: 1.1rem; }
+        .item-price { color: var(--clr-golden); font-weight: 700; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sanjeev Bakery</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="cakes.html">Birthday Cakes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="container section" style="margin-top: 80px;">
+        <div class="section-header fade-up">
+            <p>Delicious Choices</p>
+            <h2>Our Menu</h2>
+        </div>
+
+        <div class="grid-2 fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+            <!-- Snacks & Sandwiches -->
+            <div class="menu-category">
+                <h3 class="menu-category-title">Snacks & Sandwiches</h3>
+                <div class="menu-item">
+                    <span class="item-name">Aloo Patty</span>
+                    <span class="item-price">₹40</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Paneer Patty</span>
+                    <span class="item-price">₹55</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Sandwich</span>
+                    <span class="item-price">₹35</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Cheese Sandwich</span>
+                    <span class="item-price">₹55</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Grilled Sandwich</span>
+                    <span class="item-price">₹170</span>
+                </div>
+            </div>
+
+            <!-- Cakes & Pastries -->
+            <div class="menu-category">
+                <h3 class="menu-category-title">Cakes & Pastries</h3>
+                <div class="menu-item">
+                    <span class="item-name">Chocolate Cake</span>
+                    <span class="item-price">₹980</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Belgium Chocolate Cake</span>
+                    <span class="item-price">₹560</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chocolate Truffle Pastry</span>
+                    <span class="item-price">₹80</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chocolate Donut</span>
+                    <span class="item-price">₹65</span>
+                </div>
+            </div>
+
+            <!-- Cookies & Biscuits -->
+            <div class="menu-category">
+                <h3 class="menu-category-title">Cookies & Biscuits (Per Kg)</h3>
+                <div class="menu-item">
+                    <span class="item-name">Butter Pista Cookies</span>
+                    <span class="item-price">₹840</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Fruit Cake Rusk</span>
+                    <span class="item-price">₹675</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Coconut Khatai</span>
+                    <span class="item-price">₹450</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center fade-up" style="margin-top: 40px;">
+            <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-primary" target="_blank">Order on WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="floating-wa"><i class="fab fa-whatsapp"></i></a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom fade-up">
+                <p>&copy; 2026 Sanjeev Bakery & Confectionery. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

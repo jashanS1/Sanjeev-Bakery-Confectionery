@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Sanjeev Bakery & Confectionery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .masonry { column-count: 3; column-gap: 20px; }
+        .masonry-item { break-inside: avoid; margin-bottom: 20px; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-soft); position: relative; }
+        .masonry-item img { width: 100%; display: block; transition: transform 0.5s ease; }
+        .masonry-item:hover img { transform: scale(1.05); }
+        @media (max-width: 900px) { .masonry { column-count: 2; } }
+        @media (max-width: 600px) { .masonry { column-count: 1; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sanjeev Bakery</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cakes.html">Birthday Cakes</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="container section" style="margin-top: 80px;">
+        <div class="section-header fade-up">
+            <p>Our Creations</p>
+            <h2>Luxury Gallery</h2>
+        </div>
+
+        <div class="masonry fade-up">
+            <div class="masonry-item zoom-in"><img src="https://images.unsplash.com/photo-1555507036-ab1f40ce88f4?q=80&w=600&auto=format&fit=crop" alt="Store Interior"></div>
+            <div class="masonry-item zoom-in"><img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f6a5b8?q=80&w=600&auto=format&fit=crop" alt="Fresh Cakes"></div>
+            <div class="masonry-item zoom-in"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=600&auto=format&fit=crop" alt="Cookies"></div>
+            <div class="masonry-item zoom-in"><img src="https://images.unsplash.com/photo-1579372785642-e3d64c767e37?q=80&w=600&auto=format&fit=crop" alt="Pastries"></div>
+            <div class="masonry-item zoom-in"><img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=600&auto=format&fit=crop" alt="Birthday Cakes"></div>
+            <div class="masonry-item zoom-in"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" alt="Bakery Counter"></div>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="floating-wa"><i class="fab fa-whatsapp"></i></a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom fade-up">
+                <p>&copy; 2026 Sanjeev Bakery & Confectionery. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
